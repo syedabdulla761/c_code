@@ -7,8 +7,8 @@ int main()
     for(c=1;c<=a && c<=b;++c)
     {
             if((a%c==0) && (b%c==0))
-         GCD=c;;
+         GCD=c;
      }
-     printf("HCF of %d and %d is %d\n",a,b,GCD);
+     printf("GCD of %d and %d is %d\n",a,b,GCD);
     return 0;
 }
