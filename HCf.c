@@ -1,19 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
+    int a,b,c,GCD;
     printf("Enter two numbers:");
     scanf("%d%d",&a,&b);
-    for(c<=a && c<=b)
-       {
-            if((c%a==0) && (c%b==0))
-        {
-            printf("HCF of %d and %d is %d",a,b,c);
-        }
-        else
-        {
-            printf("HCF doesnt exist");
-        } 
-       }
+    for(c=1;c<=a && c<=b;++c)
+    {
+            if((a%c==0) && (b%c==0))
+         GCD=c;;
+     }
+     printf("HCF of %d and %d is %d\n",a,b,GCD);
     return 0;
 }
