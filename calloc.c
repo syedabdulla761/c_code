@@ -25,3 +25,4 @@ int main()
     free(ptr);
     printf("\nMemory freed");
 }
+https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
