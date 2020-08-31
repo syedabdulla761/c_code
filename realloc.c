@@ -21,8 +21,19 @@ int main()
             printf("%d",ptr[i]);
         }
     }
-    printf("\nMemory allocated");
+    n=10;
+    printf("\nNew size of the array %d",n);
+    ptr=realloc(ptr,n*sizeof(int));
+    printf("\nMemory successfully re-allocated using realloc");
+    for(i=5;i<n;i++)
+    {
+        ptr[i]=i+1;
+    }
+    printf("\nMemory succesfully re-allocated=");
+        for(i=0;i<n;i++)
+    {
+        printf("%d",ptr[i]);
+    }
     free(ptr);
-    printf("\nMemory freed");
 }
 // https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
