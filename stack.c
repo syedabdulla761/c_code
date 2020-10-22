@@ -23,7 +23,7 @@ void main()
                      scanf("%d",&item);
                      push(item); 
                      printf("%d pushed\n",item);
-            break;
+            break;4
             case 2 : item=pop();
                      printf("%d popped\n",item);
             break;
