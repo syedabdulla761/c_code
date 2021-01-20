@@ -11,7 +11,7 @@ NODE root=0;
 NODE insert_front(NODE);
 NODE insert_rear(NODE);
 NODE insert_pos(NODE);
-NODE delete_front(NODE);
+NODE delete_front(NODE);Gst
 NODE delete_rear(NODE);
 NODE delete_pos(NODE);
 void display(NODE);
