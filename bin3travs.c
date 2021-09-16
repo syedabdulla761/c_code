@@ -41,7 +41,7 @@ void create(NODE *root1)
 		create(&temp);
 	}
 	else
-		(*root1)->lchild;
+		(*root1)->lchild=0;
 	if(is_rchild(&(*root1)))
 	{
 		(*root1)->rchild=(NODE)malloc(sizeof(struct node*));

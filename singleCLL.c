@@ -81,7 +81,6 @@ void main()
         printf("Do you want to continue 1-Yes or 0-No\n");
         scanf("%d",&ch1);
     }
-        return 0;
 }
 
 NODE insert_front(NODE head)
@@ -106,7 +105,7 @@ NODE insert_end(NODE head)
 {
     NODE newnode,next;
     newnode=(NODE)malloc(sizeof(struct node));
-    newnode->rlink=head;
+    newnode->rlink=0;
     printf("Enter the data\n");
     scanf("%d",&newnode->data);
     if(head->rlink==head)
@@ -194,7 +193,7 @@ NODE insert_pos(NODE head)/*at specified position*/
     NODE newnode,prev,next;
     int i,pos;
     newnode=(NODE)malloc(sizeof(struct node));
-    newnode->rlink=newnode;
+    newnode->rlink=0;
     printf("Enter the data to be inserted at specified position\n");
     scanf("%d",&newnode->data);
     printf("Enter the position where node to be inserted\n");

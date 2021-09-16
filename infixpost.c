@@ -120,7 +120,7 @@ void InfixToPostfix(char infix_exp[], char postfix_exp[])
 		else if(item == ')')         /* if current symbol is ')' then */
 		{
 			x = pop();                   /* pop and keep popping until */
-while(x != '(')                /* '(' encounterd */
+		while(x != '(')                /* '(' encounterd */
 			{
 				postfix_exp[j] = x;
 				j++;
@@ -139,19 +139,9 @@ while(x != '(')                /* '(' encounterd */
 
 		item = infix_exp[i]; /* go to next symbol of infix expression */
 	} /* while loop ends here */
-	if(top>0)
-	{
-		printf("\nInvalid infix Expression.\n");        /* the it is illegeal  symbol */
-		getchar();
-		exit(1);
-	}
-	if(top>0)
-	{
-		printf("\nInvalid infix Expression.\n");        /* the it is illegeal  symbol */
-		getchar();
-		exit(1);
-	}
-postfix_exp[j] = '\0'; /* add sentinel else puts() fucntion */
+	
+postfix_exp[j] = '\0'; /* add sentinel else puts() func
+tion */
 	/* will print entire postfix[] array upto SIZE */
 
 }
